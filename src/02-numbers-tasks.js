@@ -238,6 +238,12 @@ function toNumber(value, def) {
   }
   return def;
 }
+/* Проверяем, был ли value создан с помощью класса Number или равен ли типу number
+Если бы оставили только typeof, то код не пропускал бы числа, созданные с помощью конструктора,
+т.к. для него они Object
+isNaN - дополнительная проверо4ка на NaN, так как с точки зрения джса NaN - это число,
+и typeof его пропустит
+*/
 
 module.exports = {
   getRectangleArea,
