@@ -161,8 +161,10 @@ function parseNumberFromString(value) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelepipedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelepipedDiagonal(a, b, c) {
+  // https://collegedunia.com/exams/rectangular-parallelepiped-formula-volume-and-diagonal-mathematics-articleid-4571
+  // D2= a2+b2+c2 = Diagonal of rectangular parallelepiped
+  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
 }
 
 
