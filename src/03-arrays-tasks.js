@@ -39,10 +39,15 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(/* len */) {
-  throw new Error('Not implemented');
+function generateOdds(len) {
+  // const array = [];
+  // for (let i = 1; i <= len; i * 2 + 1) {
+  //   array.push(i);
+  // }
+  // return array;
+  return Array.from({ length: len }, (_, i) => i * 2 + 1);
+  // _ - индекс, если пропускаем, то i становится индексом,а раз массив пустой,то индекс - undefined
 }
-
 
 /**
  * Returns the doubled array - elements of the specified array
